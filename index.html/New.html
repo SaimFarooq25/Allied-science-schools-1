@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allied Science Schools</title>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+   body {
+
+        background:floralwhite;
+        font-family: Arial, sans-serif;
+    
+    }
+    .h-first a{
+        text-decoration:none ;
+        margin: 20px;
+        font-size: 20px;    
+    }
+    .h-first a:hover{
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    .batch {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .batch i {
+        color: #4CAF50;
+        margin-right: 10px;
+        font-size: 24px;
+    }
+    header{
+        background:rgb(20,900,20);
+        width: 101%;
+        height: 80px;
+        margin:-10px;
+
+    /* Animation properties */
+    position: relative;
+    animation: slideIn 8s ease-out forwards; /* 1ss duration, ease-out effect */
+  }
+
+  /* Slide in from left */
+  @keyframes slideIn {
+    0% {
+      left: -100%; /* start completely left off-screen */
+      opacity: 0;
+    }
+    100% {
+      left: 0; /* final position */
+      opacity: 1;
+    }
+  }
+    logo{
+        margin: 50px 40px;
+        font-size: 50px;
+        color:black;
+        font-family: Segoe UI,sans-serif;
+         transition: all 1s ease-out;
+        animation: spin 3s linear infinite;
+    }
+
+
+    logo:hover{
+        font-size: 3.5rem;
+        color: bold;
+    }
+   img{
+    height:80px;
+    border-radius: 10px;
+   }
+   .h-first a{
+        text-decoration:none ;
+        margin: 20px;
+        font-size: 20px;    
+    }
+    .h-first a:hover{
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    .container{
+    box-shadow: 0 9px 15px rgba(0,0,0,0.5);
+    height: 200%;
+    border-radius: 10px;
+    color: darkred;
+    font-size: 30px;
+    font-family: Arial,sans-serif;
+    transition: transform 0.3s ,box-shadow 0.3s;
+}
+.container:hover{
+    transform: translateY(-14px);
+}
+.h-first{
+    height: 70px;
+    width: 50%;
+    margin: -30px 610px;
+    background:red;
+    shape-rendering: 200px;
+    border-radius: 30px;
+}
+ /* ===== HERO SECTION ===== */
+    .hero {
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1976d2, #0d47a1);
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .typing {
+      border-right: 3px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    /* ===== CARDS SECTION ===== */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      cursor: pointer;
+      transform: scale(1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .card:hover img {
+      transform: scale(1.1);
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      margin: 15px;
+      color: #1976d2;
+    }
+    .card p {
+      color: #555;
+      font-size: 14px;
+      margin: 0 15px 20px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0d47a1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    footer p {
+      margin: 0;
+      font-size: 16px;
+    }
+    .wave {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 200%;
+      height: 100px;
+      background: url('https://i.ibb.co/w6H1xDv/wave.png');
+      background-size: 50% 100px;
+      animation: wave 4s linear infinite;
+      opacity: 0.5;
+    }
+    @keyframes wave {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .b-first a{
+    margin: -0px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    height: 20px;
+}
+.a-first a{
+   text-decoration: none; 
+   color: black; 
+    font-size: 20px;
+     height: 20px;
+     margin: 5px;
+}
+.b-first{
+    margin: 10px 1070px;
+    width: 20%;
+    font-size: 30px;
+    color: whitesmoke;
+    background: blue;
+    border-radius: 10px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+.b-first:hover{
+transform: translateX(-15px);
+}
+.a-first:hover{
+    transform: translateX(-15px);
+}
+.a-first{
+    margin: 10px 1070px;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    background: skyblue;
+    transition: transform 0.3s;
+}
+</style>
+    <body>
+    
+<header>
+    <img src="download (11).jpeg" alt="mono"></img>
+    <logo>Allied Science Schools</logo>
+</header>
+<header class="h-first">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Activities.html">Activities</a>
+    <a href="Acadmies.html">Acadmies</a>
+    <a href="New.html">New</a>
+    <a href="Contact.html">Contact </a>
+</header>
+
+  <!-- Hero Section with Typing -->
+  <div class="hero">
+    <span id="typing" class="typing"></span>
+  </div>
+<header class="b-first"><a href="Experinces.html">Experience<a>
+</header>
+<header class="a-first"><a href="Testing.html">Testing Progress</a></header>
+  <!-- Cards Section -->
+  <div class="cards">
+    <div class="card">
+      <img src="images (15).jpeg" alt="School Blazer">
+      <h3>School Blazer</h3>
+      <p>Official navy blue blazer with golden buttons, worn in winter season.</p>
+    </div>
+    <div class="card">
+      <img src="images (9).jpeg" alt="School Sweater">
+      <h3>School Sweater</h3>
+      <p>Sky blue sleeveless sweater with school logo, worn for daily use.</p>
+    </div>
+    <div class="card">
+      <img src="images (11).jpeg" alt="School Shirt">
+      <h3>School Shirt</h3>
+      <p>Light blue cotton shirt with perfect fitting, part of regular uniform.</p>
+    </div>
+    <div class="card">
+      <img src="images (10).jpeg" alt="School Tie">
+      <h3>School Tie</h3>
+      <p>Striped tie representing school identity, worn with shirt & blazer.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wave"></div>
+    <p>Website Developed by <b>Saim Farooq</b> | Professional Website Developer</p>
+  </footer>
+
+  <!-- JS for Typing Effect -->
+  <script>
+    const text = "Welcome to New";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+    window.onload = typeWriter;
+  </script>
+    <style>
+    /* ===== HERO ===== */
+    .hero {
+      height: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1976d2, #0d47a1);
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .typing {
+      border-right: 3px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    /* ===== CARDS ===== */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      width: 300px;
+      border-radius: 14px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      margin: 15px;
+      color: #1976d2;
+    }
+    .card p {
+      color: #555;
+      font-size: 14px;
+      margin: 0 15px 20px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0d47a1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    footer p { margin: 0; font-size: 16px; }
+    .wave {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 200%;
+      height: 100px;
+      background: url('https://i.ibb.co/w6H1xDv/wave.png');
+      background-size: 50% 100px;
+      animation: wave 4s linear infinite;
+      opacity: 0.5;
+    }
+    @keyframes wave {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    html, body {
+  overflow-x: hidden;   /* side scroll hatao */
+  margin: 0;
+  padding: 0;
+  height: 100%;         /* poora screen ke barabar */
+}
+
+/* Desktop */
+body {
+  transform-origin: top left;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    transform: scale(0.60);
+    width: 166%;
+    height: auto;       /* sirf content ke barabar height */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    transform: scale(0.40);
+    width: 250%;
+    height: auto;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  body {
+    transform: scale(0.30);
+    width: 333%;
+    height: auto;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <span id="typing" class="typing"></span>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards">
+    <div class="card">
+      <img src="download (16).jpeg" alt="About">
+      <h3>About Allied Science Schools</h3>
+      <p>Allied Science Schools provide quality education with a modern approach, preparing students for academic excellence and practical life.</p>
+    </div>
+
+    <div class="card">
+      <img src="download (12).jpeg" alt="Academies">
+      <h3>Our Academies</h3>
+      <p>With multiple campuses, Allied Science Schools ensure accessibility and standard learning environments across different regions.</p>
+    </div>
+
+    <div class="card">
+      <img src="download.jpeg" alt="Facilities">
+      <h3>Facilities</h3>
+      <p>We provide libraries, science labs, computer labs, sports grounds, and co-curricular activities to ensure all-round student development.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wave"></div>
+    <p>Website Developed by <b>Saim Farooq</b> | Allied Science Schools</p>
+  </footer>
+
+  <!-- Typing Effect JS -->
+  <script>
+    const text = "Welcome to Allied Science Schools";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+    window.onload = typeWriter;
+  </script>

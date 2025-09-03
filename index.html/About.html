@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allied Science Schools</title>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    body {
+
+        background:floralwhite;
+        font-family: Arial, sans-serif;
+    
+    }
+    .h-first a{
+        text-decoration:none ;
+        margin: 20px;
+        font-size: 20px;    
+    }
+    .h-first a:hover{
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    .batch {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .batch i {
+        color: #4CAF50;
+        margin-right: 10px;
+        font-size: 24px;
+    }
+    header{
+        background:rgb(20,900,20);
+        width: 101%;
+        height: 80px;
+        margin:-10px;
+
+    /* Animation properties */
+    position: relative;
+    animation: slideIn 8s ease-out forwards; /* 1ss duration, ease-out effect */
+  }
+
+  /* Slide in from left */
+  @keyframes slideIn {
+    0% {
+      left: -100%; /* start completely left off-screen */
+      opacity: 0;
+    }
+    100% {
+      left: 0; /* final position */
+      opacity: 1;
+    }
+  }
+    logo{
+        margin: 50px 40px;
+        font-size: 50px;
+        color:black;
+        font-family: Segoe UI,sans-serif;
+         transition: all 1s ease-out;
+        animation: spin 3s linear infinite;
+    }
+
+
+    logo:hover{
+        font-size: 3.5rem;
+        color: bold;
+    }
+   img{
+    height:80px;
+    border-radius: 10px;
+   }
+   .h-first a{
+        text-decoration:none ;
+        margin: 20px;
+        font-size: 20px;    
+    }
+    .h-first a:hover{
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    .container{
+    box-shadow: 0 9px 15px rgba(0,0,0,0.5);
+    height: 200%;
+    border-radius: 10px;
+    color: darkred;
+    font-size: 30px;
+    font-family: Arial,sans-serif;
+    transition: transform 0.3s ,box-shadow 0.3s;
+}
+.container:hover{
+    transform: translateY(-14px);
+}
+.h-first{
+    height: 70px;
+    width: 50%;
+    margin: -30px 610px;
+    background:red;
+    shape-rendering: 200px;
+    border-radius: 30px;
+}
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #1a2980, #26d0ce);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 80px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeUp 2s forwards;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 1.3rem;
+      opacity: 0;
+      animation: fadeUp 3s forwards 1s;
+    }
+
+    /* Section Base */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1a2980;
+    }
+
+    .card {
+        color:blueviolet;
+      height:240px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 7px 15px rgba(0,0,0,0.4);
+      padding: 20px;
+      margin: 20px 0px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    /* Grid Layout */
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+    .two-col {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .three-col {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+      height: 200px;
+    }
+
+    /* Team Cards */
+    .team-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .team-card {
+      text-align: center;
+    }
+    .team-card h3 {
+      margin: 10px 0 5px;
+    }
+    .team-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Achievements */
+    .achievements ul {
+      list-style: none;
+      padding: 0;
+    }
+    .achievements li {
+      background: #e3f2fd;
+      margin: 8px 0;
+      padding: 12px;
+      border-left: 5px solid #1a2980;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background: #1a2980;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #26d0ce;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Typing Animation */
+    #welcome-text {
+      border-right: 2px solid white;
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+html, body {
+  overflow-x: hidden;   /* side scroll hatao */
+  margin: 0;
+  padding: 0;
+  height: 100%;         /* poora screen ke barabar */
+}
+
+/* Desktop */
+body {
+  transform-origin: top left;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    transform: scale(0.60);
+    width: 166%;
+    height: auto;       /* sirf content ke barabar height */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    transform: scale(0.40);
+    width: 250%;
+    height: auto;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  body {
+    transform: scale(0.30);
+    width: 333%;
+    height: auto;
+  }
+}
+.b-first a{
+    margin: -0px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    height: 20px;
+}
+.a-first a{
+   text-decoration: none; 
+   color: black; 
+    font-size: 20px;
+     height: 20px;
+     margin: 5px;
+}
+.b-first{
+    margin: 10px 1070px;
+    width: 20%;
+    font-size: 30px;
+    color: whitesmoke;
+    background: blue;
+    border-radius: 10px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+.b-first:hover{
+transform: translateX(-15px);
+}
+.a-first:hover{
+    transform: translateX(-15px);
+}
+.a-first{
+    margin: 10px 1070px;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    background: skyblue;
+    transition: transform 0.3s;
+}
+</style>
+    <body>
+    
+<header>
+    <img src="download (11).jpeg" alt="mono"></img>
+    <logo>Allied Science Schools</logo>
+</header>
+<header class="h-first">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Activities.html">Activities</a>
+    <a href="Acadmies.html">Acadmies</a>
+    <a href="New.html">New</a>
+    <a href="Contact.html">Contact </a>
+</header>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 id="welcome-text">Welcome   to   About    Us</h1>
+    <p>Discover more about Allied Science School</p>
+  </section>
+<header class="b-first"><a href="Experinces.html">Experience<a>
+</header>
+<header class="a-first"><a href="Testing.html">Testing Progress</a></header>
+  <!-- History -->
+  <section>
+    <h2>Our History</h2>
+    <div class="card">
+      <p>Founded in 2005, Allied Science School began with a vision to make quality education accessible to every child. Over the years, we have grown from a small campus to a well-established institution that serves hundreds of students with dedication and excellence.</p>
+      <img src="images.jpeg" alt="History Photo">
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section>
+    <h2>Mission & Vision</h2>
+    <div class="grid two-col">
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>To inspire lifelong learning and cultivate curiosity, creativity, and character in our students so they can contribute positively to society.</p>
+      </div>
+      <div class="card">
+        <h3>Our Vision</h3>
+        <p>To become a leading educational institution recognized for academic excellence, innovation, and holistic student development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section>
+    <h2>Our Core Values</h2>
+    <div class="grid three-col">
+      <div class="card">
+        <h3>Integrity</h3>
+        <p>We uphold honesty, fairness, and strong moral principles in all aspects of education.</p>
+        <img src="download.jpeg"alt="">
+      </div>
+      <div class="card">
+        <h3>Excellence</h3>
+        <p>We strive for the highest standards in teaching, learning, and character development.</p>
+        <img src="images (6).jpeg" alt="">
+      </div>
+      <div class="card">
+        <h3>Innovation</h3>
+        <p>We encourage creativity, problem-solving, and use of modern techniques in education.</p>
+        <img src="download (6).jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section>
+    <h2>Meet Our Team</h2>
+    <div class="grid three-col">
+      <div class="card team-card">
+        <img src="2021.jpg" alt="Principal">
+        <h3>Creat by saim farooq</h3>
+        <p>Website Develooper</p>
+      </div>
+      <div class="card team-card">
+        <img src="507930581_1934727407340123_368552866137367739_n.jpg" alt="Vice Principal">
+        <h3>Principal Sir Irfan Addvocate</h3>
+        <p>Experienced Sir</p>
+      </div>
+      <div class="card team-card">
+        <img src="140631978_3662799437174277_2150921693976252363_n.jpg" alt="Coordinator">
+        <h3>Sir Shezad</h3>
+        <p>Academic Coordinator.He is good teacher. </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documents -->
+  <section>
+    <h2>Important Documents</h2>
+    <div class="card">
+      <ul>
+        <li>School Registration Certificate</li>
+        <li>Annual Academic Calendar</li>
+        <li>Prospectus</li>
+        <li>Rules & Regulations</li>
+        <li>Annual Reports</li>
+        <li>Progress Report → Students ki grades, attendance aur performance ka record.</li>
+        <li>Result Report → Exam ke marks aur subject-wise detail.</li>
+        <li>Attendance Report → Rozana / monthly student aur teachers ki attendance.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="achievements">
+    <h2>Our Achievements</h2>
+    <div class="card">
+      <ul>
+        <li>Best School Award (2018, 2020, 2023)</li>
+        <li>100% Matric Result Success Rate (2019-2024)</li>
+        <li>Introduced Robotics & Coding in School Curriculum</li>
+        <li>Sports Championship Winners – District Level</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Allied Science School(Star Ideal Campus) | All Rights Reserved</p>
+    <p>
+      <h4>Dhully|Gujranwala</h4>
+      <a href="#">Home</a> | 
+      <a href="#">Admissions</a> | 
+      <a href="#">Contact</a>
+    </p>
+    <h3>This website Developed by saimfarooq.he is a passionate developer so come for develop websites.</h3>
+  </footer>
+
+  <!-- JS Typing Effect -->
+  <script>
+    const text = document.getElementById("welcome-text");
+    const str = text.innerText;
+    text.innerText = "";
+    let i = 0;
+    function typing() {
+      if (i < str.length) {
+        text.innerText += str.charAt(i);
+        i++;
+        setTimeout(typing, 100);
+      }
+    }
+    window.onload = typing;
+  </script>
+
+</body>
+</html>

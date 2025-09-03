@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allied Science Schools</title>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    body {
+
+        background:floralwhite;
+        font-family: Arial, sans-serif;
+    
+    }
+    .h-first a{
+        text-decoration:none ;
+        margin: 20px;
+        font-size: 20px;    
+    }
+    .h-first a:hover{
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    .batch {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .batch i {
+        color: #4CAF50;
+        margin-right: 10px;
+        font-size: 24px;
+    }
+    header{
+        background:rgb(20,900,20);
+        width: 101%;
+        height: 80px;
+        margin:-10px;
+
+    /* Animation properties */
+    position: relative;
+    animation: slideIn 8s ease-out forwards; /* 1ss duration, ease-out effect */
+  }
+
+  /* Slide in from left */
+  @keyframes slideIn {
+    0% {
+      left: -100%; /* start completely left off-screen */
+      opacity: 0;
+    }
+    100% {
+      left: 0; /* final position */
+      opacity: 1;
+    }
+  }
+    logo{
+        margin: 50px 40px;
+        font-size: 50px;
+        color:black;
+        font-family: Segoe UI,sans-serif;
+         transition: all 1s ease-out;
+        animation: spin 3s linear infinite;
+    }
+
+
+    logo:hover{
+        font-size: 3.5rem;
+        color: bold;
+    }
+   img{
+    height:80px;
+    border-radius: 10px;
+   }
+   .container{
+    box-shadow: 0 9px 15px rgba(0,0,0,0.5);
+    height: 200%;
+    border-radius: 10px;
+    color: darkred;
+    font-size: 30px;
+    font-family: Arial,sans-serif;
+    transition: transform 0.3s ,box-shadow 0.3s;
+}
+.container:hover{
+    transform: translateY(-14px);
+}
+.h-first{
+    height: 70px;
+    width: 50%;
+    margin: -30px 610px;
+    background:red;
+    shape-rendering: 200px;
+    border-radius: 30px;
+}
+.b-first a{
+    margin: -0px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    height: 20px;
+}
+.a-first a{
+   text-decoration: none; 
+   color: black; 
+    font-size: 20px;
+     height: 20px;
+     margin: 5px;
+}
+.b-first{
+    margin: 10px 1070px;
+    width: 20%;
+    font-size: 30px;
+    color: whitesmoke;
+    background: blue;
+    border-radius: 10px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+.b-first:hover{
+transform: translateX(-15px);
+}
+.a-first:hover{
+    transform: translateX(-15px);
+}
+.a-first{
+    margin: 10px 1070px;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    background: skyblue;
+    transition: transform 0.3s;
+}
+.image-top{
+    width: 90%;        /* Photo size */
+    margin-bottom: 20px; /* Space between photo and link */
+    height: 170px;
+    margin: 20px 15px;
+    border-radius: 7px;
+}
+.card{
+    border-radius: 9px;
+    box-shadow: 2px 6px 5px;
+    font-size: 20px;
+    color: blueviolet;
+    width: 100%;
+    height: 100%;
+}
+.card-3{
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 20px;
+}
+
+.card-3:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-title {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.card-desc {
+  font-size: 16px;
+  color: #555;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  border: 1px solid #3498db;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.card-link:hover {
+  background-color: #3498db;
+  color: white;
+}
+.body-img{
+    width: 100%;
+    height: 400px;
+    display: block;
+    position: relative;
+    margin: 100px 2px;
+     animation: fadeIn 12s forwards; /* 3 sec me dikhne lagega */
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }   /* bilkul gayab */
+    to   { opacity: 1; }   /* poora dikhne lage */
+  }
+
+.contact-card{
+align-items: flex-start;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  border: 1px solid #3498db;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+p{
+    font-size: 30px;
+}
+.img-1{
+    width: 200px;
+    height: 200px;
+    margin: 0px 30px;
+}
+.container-2{
+  width: 350px;              /* card ki width */
+  background: white;          /* card ka background */
+  border-radius: 10px;        /* card ke corner round */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* halka shadow */
+  padding: 20px;              /* andar ka gap */
+  text-align: center;         /* text center align */
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 0px 500px;
+  display: block;
+  justify-content: flex-end; 
+}
+.container-2:hover{
+    transform: translateY(-15px);
+}
+.card-2{
+    text-align: center;
+   width: 200px;
+   height: 150%;
+}
+.image-2{
+    display: block;
+    margin: auto,15px;
+    border-radius: 70%;
+    width: 170%;
+    height: 200px;
+    text-align: center;
+     border: 1px solid #3498db;
+}
+li{
+    margin: 5px;
+        font-size: 17px;
+    color: blueviolet;
+}
+
+  /* Parent container */
+  .card-container {
+    display: flex;              /* ek line me cards */
+    justify-content: flex-end;  /* right side */
+    align-items: flex-start;    /* 👈 top side */
+    gap: 20px;                  /* cards ke beech gap */
+    padding: 20px;
+    height: 100%;               /* align-items ka effect lane ke liye */
+  }
+
+  /* Card style */
+  .card {
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s,box-shadow 0.3s;
+  }
+  .card:hover{
+    transform: translateY(-14px);
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .card h3 {
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .card p {
+    font-size: 14px;
+    color: #555;
+  }
+  :root{
+    --ft-bg:#0f172a;      /* dark navy */
+    --ft-text:#cbd5e1;    /* light slate */
+    --ft-head:#e2e8f0;    /* headings */
+    --ft-accent:#3b82f6;  /* blue */
+    --ft-line:#1f2937;    /* divider */
+  }
+  .site-footer{
+    margin-top:40px;
+    background:var(--ft-bg);
+    color:var(--ft-text);
+  }
+  .ft-container{
+    max-width:1100px;
+    margin:0 auto;
+    padding:40px 20px 24px;
+    display:grid;
+    grid-template-columns: 2fr 1fr 1.4fr;
+    gap:32px;
+  }
+  .ft-title{
+    margin:0 0 10px;
+    color:var(--ft-head);
+    font-size:24px;
+    letter-spacing:.4px;
+  }
+  .ft-text{margin:0; line-height:1.6;}
+  .ft-head{margin:0 0 12px; color:var(--ft-head); font-size:18px;}
+  .ft-links, .ft-contact{list-style:none; padding:0; margin:0;}
+  .ft-links li+li, .ft-contact li+li{margin-top:8px;}
+  .ft-links a{
+    color:var(--ft-text);
+    text-decoration:none;
+  }
+  .ft-links a:hover{color:var(--ft-accent);}
+  .ft-social{margin-top:14px; display:flex; gap:10px;}
+  .ft-ico{
+    width:36px; height:36px; display:grid; place-items:center;
+    border:1px solid var(--ft-line); border-radius:10px; color:var(--ft-head); text-decoration:none;
+    transition:transform .2s, border-color .2s, color .2s;
+  }
+  .ft-ico:hover{transform:translateY(-2px); color:#fff; border-color:var(--ft-accent);}
+  .ft-bottom{
+    border-top:1px solid var(--ft-line);
+    display:flex; align-items:center; justify-content:center; gap:12px;
+    padding:14px 16px; position:relative;
+  }
+  .ft-bottom p{margin:0; font-size:14px;}
+  .to-top{
+    position:absolute; right:16px; top:50%; transform:translateY(-50%);
+    border:1px solid var(--ft-line);
+    background:transparent; color:var(--ft-head);
+    padding:6px 10px; border-radius:8px; cursor:pointer;
+  }
+  .to-top:hover{border-color:var(--ft-accent); color:#fff}
+  /* Responsive */
+  @media (max-width:900px){
+    .ft-container{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:640px){
+    .ft-container{grid-template-columns:1fr}
+    .ft-bottom{justify-content:space-between}
+  }
+  html, body {
+  overflow-x: hidden;   /* side scroll hatao */
+  margin: 0;
+  padding: 0;
+}
+
+/* By default desktop layout (laptop jesa hi rahega) */
+body {
+  transform-origin: top left;
+}
+html, body {
+  overflow-x: hidden;   /* side scroll hatao */
+  margin: 0;
+  padding: 0;
+  height: 100%;         /* poora screen ke barabar */
+}
+
+/* Desktop */
+body {
+  transform-origin: top left;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    transform: scale(0.60);
+    width: 166%;
+    height: auto;       /* sirf content ke barabar height */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    transform: scale(0.40);
+    width: 250%;
+    height: auto;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  body {
+    transform: scale(0.30);
+    width: 333%;
+    height: auto;
+  }
+}
+
+</style>
+
+<script>
+  // Auto year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Back to Top
+  const toTopBtn = document.getElementById('toTop');
+  toTopBtn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+</script>
+<!-- ========= /Site Footer ========= -->
+</style>
+</head>
+<body>
+    
+<header>
+    <img src="download (11).jpeg" alt="mono"></img>
+    <logo>Allied Science Schools</logo>
+</header>
+<header class="h-first">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Activities.html">Activities</a>
+    <a href="Acadmies.html">Acadmies</a>
+    <a href="New.html">New</a>
+    <a href="Contact.html">Contact </a>
+</header>
+<div class="contact-card">
+<img class="body-img" src="images (2).jpeg" alt="holistic"><p>"Allied Health is a part of healthcare that helps doctors and nurses take care of patients. People working in allied health do important jobs like taking X-rays, helping patients exercise, checking blood tests, and giving advice about healthy food. These jobs make hospitals and clinics work better and help people stay healthy."</p></div>
+<div class="card-3"><img class="image-top" src="download (4).jpeg" alt="Blog"><li>"Welcome to [School Name], where learning meets excellence."</li>
+
+<li>
+"Our mission is to provide quality education and empower students for a brighter future."</li>
+<li>
+"At [School Name], we believe in holistic development – academically, socially, and personally."</li>
+
+<li>
+"Join us at [School Name], where every child’s potential is recognized and celebrated."</li>
+</div>
+<div class="container-2">
+    <div class="card-2"><img class="image-2"src="images (3).jpeg" alt="hero"><li>School / Education models (teaching-learning models like Montessori, STEM, etc.)</li>
+        <li>Science models (biology, physics experiments, working models for school projects)</li>
+        <li>Computer Science / AI models (like machine learning models)</li>
+        <li>Business models (like franchise model, e-commerce model, etc.)</li>
+        <li>Fashion models (people who present clothes/brands)</li></div>
+    </div>
+<header class="b-first"><a href="Experinces.html">Experience<a>
+</header>
+<header class="a-first"><a href="Testing.html">Testing Progress</a></header>
+<h2>Allied Science Schools - Batches</h2>
+
+<div class="batch">
+    <i class="fas fa-flask"></i>
+    <span>Pre-Medical Batch</span>
+</div>
+
+<div class="batch">
+    <i class="fas fa-dna"></i>
+    <span>Pre-Engineering Batch</span>
+</div>
+
+<div class="batch">
+    <i class="fas fa-microscope"></i>
+    <span>Computer Science Batch</span>
+</div>
+
+<div class="batch">
+    <i class="fas fa-atom"></i>
+    <span>General Science Batch</span>
+</div>
+<div class="container">
+    <img class="img-1" src="download (1).jpeg" alt="img"><p><li>"I am a student at Allied Science Schools."</li>
+        <li>"Allied Science Schools provide quality education in science and technology."</li><li>"Admissions are open at Allied Science Schools for the new academic year."</p></img></div>
+            <div class="card">
+  <img src="images (17).jpeg" alt="Card Photo" class="card-img">
+  <h3 class="card-title">Card Title</h3>
+  <p class="card-desc">
+    Allied Science Schools is committed to providing quality education that nurtures curiosity, creativity, and personal growth. 
+    Our dedicated faculty ensures every student reaches their full potential in academics, sports, and extracurricular activities.
+  </p>
+  <a href="#" class="card-link">Read More</a>
+</div>
+<body>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="download (1).jpeg" alt="Photo 1">
+      <h3>Card 1</h3>
+      <p>"Our school is a place where young minds grow with knowledge, values, and confidence."</p>
+    </div>
+
+    <div class="card">
+      <img src="images (1).jpeg" alt="Photo 2">
+      <h3>Card 2</h3>
+      <p>Come to for your success."A school that shapes bright futures with learning and discipline."</p>
+    </div>
+
+    <div class="card">
+      <img src="images (7).jpeg" alt="Photo 3">
+      <h3>Card 3</h3>
+      <p> Gives the learning hub."Where education meets character and dreams take flight."</p>
+    </div>
+  </div>
+<!-- ========= Site Footer ========= -->
+<footer class="site-footer">
+  <div class="ft-container">
+    <!-- Brand / About -->
+    <div class="ft-col">
+      <h3 class="ft-title">Allied Science Schools</h3>
+      <p class="ft-text">
+        A safe, caring, and modern learning community—where education meets character.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="ft-col">
+      <h4 class="ft-head">Quick Links</h4>
+      <ul class="ft-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/admissions.html">Admissions</a></li>
+        <li><a href="/programs.html">Programs</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="ft-col">
+      <h4 class="ft-head">Contact</h4>
+      <ul class="ft-contact">
+        <li>📍 Main Campus, City</li>
+        <li>📞 +92 300 0000000</li>
+        <li>✉️ info@alliedscienceschools.edu</li>
+      </ul>
+
+      <!-- Social (SVG icons – no CDN needed) -->
+      <div class="ft-social">
+        <a href="#" aria-label="Facebook" class="ft-ico" title="Facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.2 10.44 22v-7.02H7.9v-2.92h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.77l-.44 2.92h-2.33V22C18.34 21.2 22 17.08 22 12.06z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="ft-ico" title="Instagram">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm5.75-2.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube" class="ft-ico" title="YouTube">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.8 15.5v-7l6 3.5-6 3.5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ft-bottom">
+    <p>© <span id="year"></span> Allied Science Schools. All rights reserved.</p>
+    <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+  </div>
+</footer>
+</body>
+</html>

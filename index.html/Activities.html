@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allied Science Schools</title>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body {
+
+        background:floralwhite;
+        font-family: Arial, sans-serif;
+    
+    }
+    .h-first a{
+        text-decoration:none ;
+        margin: 20px;
+        font-size: 20px;    
+    }
+    .h-first a:hover{
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    .batch {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .batch i {
+        color: #4CAF50;
+        margin-right: 10px;
+        font-size: 24px;
+    }
+    header{
+        background:rgb(20,900,20);
+        width: 101%;
+        height: 80px;
+        margin:-10px;
+
+    /* Animation properties */
+    position: relative;
+    animation: slideIn 8s ease-out forwards; /* 1ss duration, ease-out effect */
+  }
+
+  /* Slide in from left */
+  @keyframes slideIn {
+    0% {
+      left: -100%; /* start completely left off-screen */
+      opacity: 0;
+    }
+    100% {
+      left: 0; /* final position */
+      opacity: 1;
+    }
+  }
+    logo{
+        margin: 50px 40px;
+        font-size: 50px;
+        color:black;
+        font-family: Segoe UI,sans-serif;
+         transition: all 1s ease-out;
+        animation: spin 3s linear infinite;
+    }
+
+
+    logo:hover{
+        font-size: 3.5rem;
+        color: bold;
+    }
+   img{
+    height:80px;
+    border-radius: 10px;
+   }
+   .h-first a{
+        text-decoration:none ;
+        margin: 20px;
+        font-size: 20px;    
+    }
+    .h-first a:hover{
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    .container{
+    box-shadow: 0 9px 15px rgba(0,0,0,0.5);
+    height: 200%;
+    border-radius: 10px;
+    color: darkred;
+    font-size: 30px;
+    font-family: Arial,sans-serif;
+    transition: transform 0.3s ,box-shadow 0.3s;
+}
+.container:hover{
+    transform: translateY(-14px);
+}
+.h-first{
+    height: 70px;
+    width: 50%;
+    margin: -30px 610px;
+    background:red;
+    shape-rendering: 200px;
+    border-radius: 30px;
+}
+header h1 {
+      font-size: 3rem;
+      animation: slideIn 2s ease-in-out;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+      color: #0077b6;
+    }
+    .documentation {
+      padding: 40px 20px;
+      background: #e9f5ff;
+      text-align: center;
+    }
+    .documentation h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    footer {
+      background: linear-gradient(135deg, #00f2fe, #4facfe);
+     
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    footer p {
+      margin: 10px 0;
+    }
+    /* Footer Animation */
+    footer::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: rgba(255,255,255,0.1);
+      transform: rotate(30deg);
+      animation: move 6s linear infinite;
+    }
+    @keyframes move {
+      from { transform: rotate(30deg) translateX(-50%); }
+      to { transform: rotate(30deg) translateX(50%); }
+    }
+     .h-3 {background: #4CAF50; color: white; text-align: center; padding: 20px;}
+    .search-box {text-align: center; margin: 80px;}
+    .search-box input {padding: 10px; width: 50%; border-radius: 8px; border: 1px solid #ccc;}
+    .cards {display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px;}
+    .card {background: white; padding: 20px; border-radius: 10px; width: 250px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
+    .card h3 {margin: 0 0 10px;}
+    .accordion {margin-top: 10px; cursor: pointer; background: #eee; padding: 10px; border-radius: 5px;}
+    
+    .panel {display: none; margin-top: 10px; font-size: 14px; color: #333;}
+    .counter-box {text-align: center; margin: 50px;}
+    .counter {font-size: 2rem; font-weight: bold; color: #4CAF50;}
+     .hero-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #f9f9f9;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ,box-shadow 0.3s;
+    }
+    .hero-card:hover{
+      transform: translateY(-15px);
+    }
+    .hero-card img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      width: 50%;
+      padding: 40px;
+      background: white;
+    }
+
+    .hero-text h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .hero-btn {
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero-btn:hover {
+      background: #45a049;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .hero-card {
+        flex-direction: column;
+      }
+      .hero-card img, .hero-text {
+        width: 100%;
+      }
+    }
+   
+    /* ===== HERO ===== */
+    .hero {
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0066cc, #003366);
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .typing {
+      border-right: 3px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink { 50% { border-color: transparent; } }
+
+    /* ===== ADMISSION CARDS ===== */
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transform: scale(1);
+      transition: 0.3s;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .card:hover { transform: scale(1.05); }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h3 {
+      margin: 0;
+      color: #0066cc;
+    }
+    .card-content p {
+      color: #555;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* ===== CONTACT CARD ===== */
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      margin: 40px;
+    }
+    .contact-card {
+      background: white;
+      width: 500px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      animation: fadeUp 1s ease-in-out;
+    }
+    @keyframes fadeUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .contact-card h2 {
+      text-align: center;
+      color: #0066cc;
+      margin-bottom: 20px;
+    }
+    .contact-card p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* ===== FORM ===== */
+    form { display: flex; flex-direction: column; }
+    input, textarea {
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    textarea { resize: none; }
+    button {
+      padding: 12px;
+      background: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover { background: #003366; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .wave {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 200%;
+      height: 100px;
+      background: url('https://i.ibb.co/w6H1xDv/download (12).jpeg');
+      background-size: 50% 100px;
+      animation: wave 4s linear infinite;
+      opacity: 0.5;
+    }
+    @keyframes wave {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    html, body {
+  overflow-x: hidden;   /* side scroll hatao */
+  margin: 0;
+  padding: 0;
+  height: 100%;         /* poora screen ke barabar */
+}
+
+/* Desktop */
+body {
+  transform-origin: top left;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    transform: scale(0.60);
+    width: 166%;
+    height: auto;       /* sirf content ke barabar height */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    transform: scale(0.40);
+    width: 250%;
+    height: auto;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  body {
+    transform: scale(0.30);
+    width: 333%;
+    height: auto;
+  }
+}
+.b-first a{
+    margin: -0px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    height: 20px;
+}
+.a-first a{
+   text-decoration: none; 
+   color: black; 
+    font-size: 20px;
+     height: 20px;
+     margin: 5px;
+}
+.b-first{
+    margin: 10px 1070px;
+    width: 20%;
+    font-size: 30px;
+    color: whitesmoke;
+    background: blue;
+    border-radius: 10px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+.b-first:hover{
+transform: translateX(-15px);
+}
+.a-first:hover{
+    transform: translateX(-15px);
+}
+.a-first{
+    margin: 10px 1070px;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    background: skyblue;
+    transition: transform 0.3s;
+}
+</style>
+    <body>
+    
+<header>
+    <img src="download (11).jpeg" alt="mono"></img>
+    <logo>Allied Science Schools</logo>
+</header>
+<header class="h-first">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Activities.html">Activities</a>
+    <a href="Acadmies.html">Acadmies</a>
+    <a href="New.html">New</a>
+    <a href="Contact.html">Contact </a>
+</header>
+<header class="h-3">
+  <h1>Our School Activities</h1>
+</header>
+<header class="b-first"><a href="Experinces.html">Experience<a>
+</header>
+<header class="a-first"><a href="Testing.html">Testing Progress</a></header>
+  <!-- Top 3 Activity Cards -->
+  <section class="cards">
+    <div class="card">
+      <img src="download (12).jpeg" alt="Sports Day">
+      <h3>Sports Day</h3>
+      <p>Annual sports day with exciting competitions and games.</p>
+    </div>
+    <div class="card">
+      <img src="images (18).jpeg" alt="Science Fair">
+      <h3>Science Fair</h3>
+      <p>Students showcase their creative science projects and ideas.</p>
+    </div>
+    <div class="card">
+      <img src="download (13).jpeg" alt="Art Exhibition">
+      <h3>Art Exhibition</h3>
+      <p>Celebrating creativity with students’ art and craft displays.</p>
+    </div>
+  </section>
+
+  <!-- Documentation -->
+  <section class="documentation">
+    <h2>Documentation</h2>
+    <p>Our school activities are designed to engage students in learning beyond the classroom. 
+    From sports to science, art to community services, we provide opportunities for every student 
+    to explore their interests and talents.</p>
+  </section>
+
+  <!-- Bottom 3 Cards -->
+  <section class="cards">
+    <div class="card">
+      <img src="download (14).jpeg" alt="Music Club">
+      <h3>Music Club</h3>
+      <p>Encouraging students to explore and enjoy music together.</p>
+    </div>
+    <div class="card">
+      <img src="download.png" alt="Debate Competition">
+      <h3>Debate Competition</h3>
+      <p>Improving confidence and communication skills through debates.</p>
+    </div>
+    <div class="card">
+      <img src="download (15).jpeg" alt="Field Trips">
+      <h3>Field Trips</h3>
+      <p>Fun and educational trips to historical and scientific places.</p>
+    </div>
+  </section>
+  <body>
+
+   
+  <div class="hero-card">
+    <img src="download (9).jpeg" alt="Activities">
+    <div class="hero-text">
+      <h1>Activities</h1>
+      <p>Show activities detail and explore more about our school programs. Students participate in various competitions, sports and creative events.</p>
+      <button class="hero-btn">Read More</button>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <span id="typing" class="typing"></span>
+  </div>
+
+  <!-- Admission Cards -->
+  <div class="cards-container">
+    <div class="card">
+      <img src="p.jpg" alt="School Campus">
+      <div class="card-content">
+        <h3>Admissions Open 2025</h3>
+        <p>Allied Science Schools is now accepting admissions for Play Group to Matric. Limited seats available – apply now!</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images (19).jpeg" alt="Classroom">
+      <div class="card-content">
+        <h3>Modern Classrooms</h3>
+        <p>Smart boards, science labs, and interactive learning environment designed for modern education.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="download (13).jpeg" alt="Sports">
+      <div class="card-content">
+        <h3>Sports & Activities</h3>
+        <p>We encourage students to participate in sports and co-curricular activities for a healthy lifestyle.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="gh.jpeg" alt="Library">
+      <div class="card-content">
+        <h3>Library & Resources</h3>
+        <p>Our library is well-equipped with books, research material, and digital resources for all classes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Card -->
+  <div class="contact-container">
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+      <p>Have questions about admissions or want to leave a comment? Fill out the form below:</p>
+      <form method="post" action="contact.php">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject (Admission / Comment)" required>
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit" name="submit">Send Message</button>
+      </form>
+      <script>
+      <?php
+        if(isset($_POST['submit'])){
+          $name = $_POST['name'];
+          $email = $_POST['email'];
+          $subject = $_POST['subject'];
+          $message = $_POST['message'];
+
+          $file = fopen("messages.txt", "a");
+          fwrite($file, "Name: $name | Email: $email | Subject: $subject | Message: $message\n");
+          fclose($file);
+
+          echo "<p style='color:green; text-align:center;'>✅ Your message has been submitted successfully!</p>";
+        }
+      ?>
+    </script>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wave">
+          <h6>Allied Scince Schools</h6>
+    </div>
+    <p>Developed by <b>Saim Farooq</b> | Allied Science Schools</p>
+  </footer>
+
+
+  <!-- Typing Effect JS -->
+  <script>
+    const text = "Welcome to our Activities";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+    window.onload = typeWriter;
+  </script> 
+  <!-- Footer -->
+  <footer>
+    <h2>School Activities</h2>
+    <p>© 2025 All Rights Reserved | Designed with ❤️</p>
+    <h2>It is my school.I paased your matric and i am a web developer.This school gives me a passion of web developer </h2>
+  </footer>
+
+
+</body>
+</html>

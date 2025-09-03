@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allied Science Schools</title>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    body {
+
+        background:floralwhite;
+        font-family: Arial, sans-serif;
+    
+    }
+    .h-first a{
+        text-decoration:none ;
+        margin: 20px;
+        font-size: 20px;    
+    }
+    .h-first a:hover{
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    .batch {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .batch i {
+        color: #4CAF50;
+        margin-right: 10px;
+        font-size: 24px;
+    }
+    header{
+        background:rgb(20,900,20);
+        width: 101%;
+        height: 80px;
+        margin:-10px;
+
+    /* Animation properties */
+    position: relative;
+    animation: slideIn 8s ease-out forwards; /* 1ss duration, ease-out effect */
+  }
+
+  /* Slide in from left */
+  @keyframes slideIn {
+    0% {
+      left: -100%; /* start completely left off-screen */
+      opacity: 0;
+    }
+    100% {
+      left: 0; /* final position */
+      opacity: 1;
+    }
+  }
+    logo{
+        margin: 50px 40px;
+        font-size: 50px;
+        color:black;
+        font-family: Segoe UI,sans-serif;
+         transition: all 1s ease-out;
+        animation: spin 3s linear infinite;
+    }
+
+
+    logo:hover{
+        font-size: 3.5rem;
+        color: bold;
+    }
+   img{
+    height:80px;
+    border-radius: 10px;
+   }
+   .h-first a{
+        text-decoration:none ;
+        margin: 20px;
+        font-size: 20px;    
+    }
+    .h-first a:hover{
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    .container{
+    box-shadow: 0 9px 15px rgba(0,0,0,0.5);
+    height: 200%;
+    border-radius: 10px;
+    color: darkred;
+    font-size: 30px;
+    font-family: Arial,sans-serif;
+    transition: transform 0.3s ,box-shadow 0.3s;
+}
+.container:hover{
+    transform: translateY(-14px);
+}
+.h-first{
+    height: 70px;
+    width: 50%;
+    margin: -30px 610px;
+    background:red;
+    shape-rendering: 200px;
+    border-radius: 30px;
+}
+
+    /* ===== HERO ===== */
+    .hero {
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0066cc, #003366);
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .typing {
+      border-right: 3px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink { 50% { border-color: transparent; } }
+
+    /* ===== CONTACT CARD ===== */
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      margin: 40px;
+    }
+    .contact-card {
+      background: white;
+      width: 400px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      animation: fadeUp 1s ease-in-out;
+    }
+    @keyframes fadeUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .contact-card h2 {
+      text-align: center;
+      color: #0066cc;
+      margin-bottom: 20px;
+    }
+    .contact-card p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* ===== FORM ===== */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    textarea { resize: none; }
+    button {
+      padding: 12px;
+      background: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #003366;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .wave {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 200%;
+      height: 100px;
+      background: url('https://i.ibb.co/w6H1xDv/wave.png');
+      background-size: 50% 100px;
+      animation: wave 4s linear infinite;
+      opacity: 0.5;
+    }
+    @keyframes wave {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    
+
+    h1 {
+      margin: 30px 0;
+      font-size: 36px;
+      color: #2c3e50;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      text-align: center;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+    }
+
+    .contact-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .contact-card p {
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+      animation: slideUp 1.5s ease;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    html, body {
+  overflow-x: hidden;   /* side scroll hatao */
+  margin: 0;
+  padding: 0;
+  height: 100%;         /* poora screen ke barabar */
+}
+
+/* Desktop */
+body {
+  transform-origin: top left;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    transform: scale(0.60);
+    width: 166%;
+    height: auto;       /* sirf content ke barabar height */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    transform: scale(0.40);
+    width: 250%;
+    height: auto;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  body {
+    transform: scale(0.30);
+    width: 333%;
+    height: auto;
+  }
+}
+.b-first a{
+    margin: -0px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    height: 20px;
+}
+.a-first a{
+   text-decoration: none; 
+   color: black; 
+    font-size: 20px;
+     height: 20px;
+     margin: 5px;
+}
+.b-first{
+    margin: 10px 1070px;
+    width: 20%;
+    font-size: 30px;
+    color: whitesmoke;
+    background: blue;
+    border-radius: 10px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+.b-first:hover{
+transform: translateX(-15px);
+}
+.a-first:hover{
+    transform: translateX(-15px);
+}
+.a-first{
+    margin: 10px 1070px;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    background: skyblue;
+    transition: transform 0.3s;
+}
+</style>
+    <body>
+    
+<header>
+    <img src="download (11).jpeg" alt="mono"></img>
+    <logo>Allied Science Schools</logo>
+</header>
+<header class="h-first">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Activities.html">Activities</a>
+    <a href="Acadmies.html">Acadmies</a>
+    <a href="New.html">New</a>
+    <a href="Contact.html">Contact </a>
+</header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <span id="typing" class="typing"></span>
+  </div>
+
+  <h1>📩 Welcome to Contact Us</h1>
+<header class="b-first"><a href="Experinces.html">Experience<a>
+</header>
+<header class="a-first"><a href="Testing.html">Testing Progress</a></header>
+  <div class="cards-container">
+    <!-- School Contact Cards -->
+    <div class="contact-card">
+      <img src="download.jpeg" alt="Admission">
+      <p>Admission Queries – Get in touch with us today.</p>
+    </div>
+    <div class="contact-card">
+      <img src="download (2).jpeg" alt="Information">
+      <p>School Information – Learn more about Allied Science School.</p>
+    </div>
+
+    <!-- Developer Cards -->
+    <div class="contact-card">
+      <img src="IMG_4296.HEIC" alt="Developer">
+      <p>I am <b>Saim Farooq</b>, a passionate Website Developer.</p>
+    </div>
+    <div class="contact-card">
+      <img src="w.jpeg" alt="Developer Work">
+      <p>I create modern, responsive, and creative websites for schools and businesses.</p>
+    </div>
+  </div>
+
+  <!-- Contact Card -->
+  <div class="contact-container">
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+      <p>Have questions about admissions or want to leave a comment? Fill out the form below:</p>
+      <form method="post" action="contact.php">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject (Admission / Comment)" required>
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit" name="submit">Send Message</button>
+      </form>
+      <script>
+      <?php
+        if(isset($_POST['submit'])){
+          $name = $_POST['name'];
+          $email = $_POST['email'];
+          $subject = $_POST['subject'];
+          $message = $_POST['message'];
+
+          // Save data into a text file (simple storage)
+          $file = fopen("messages.txt", "a");
+          fwrite($file, "Name: $name | Email: $email | Subject: $subject | Message: $message\n");
+          fclose($file);
+
+          echo "<p style='color:green; text-align:center;'>✅ Your message has been submitted successfully!</p>";
+        }
+      ?>
+  </script>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wave"></div>
+    <p>Developed by <b>Saim Farooq</b> | Allied Science Schools</p>
+  </footer>
+
+  <!-- Typing Effect JS -->
+  <script>
+    const text = "Welcome to Contact Me";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+    window.onload = typeWriter;
+  </script>

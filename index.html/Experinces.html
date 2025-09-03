@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Allied Science Schools</title>
+</head>
+<style>
+body {
+
+        background:floralwhite;
+        font-family: Arial, sans-serif;
+    
+    }
+    .h-first a{
+        text-decoration:none ;
+        margin: 20px;
+        font-size: 20px;    
+    }
+    .h-first a:hover{
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    .batch {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .batch i {
+        color: #4CAF50;
+        margin-right: 10px;
+        font-size: 24px;
+    }
+    header{
+        background:rgb(20,900,20);
+        width: 101%;
+        height: 80px;
+        margin:-10px;
+
+    /* Animation properties */
+    position: relative;
+    animation: slideIn 8s ease-out forwards; /* 1ss duration, ease-out effect */
+  }
+
+  /* Slide in from left */
+  @keyframes slideIn {
+    0% {
+      left: -100%; /* start completely left off-screen */
+      opacity: 0;
+    }
+    100% {
+      left: 0; /* final position */
+      opacity: 1;
+    }
+  }
+    logo{
+        margin: 50px 40px;
+        font-size: 50px;
+        color:black;
+        font-family: Segoe UI,sans-serif;
+         transition: all 1s ease-out;
+        animation: spin 3s linear infinite;
+    }
+
+
+    logo:hover{
+        font-size: 3.5rem;
+        color: bold;
+    }
+   img{
+    height:80px;
+    border-radius: 10px;
+   }
+   .h-first a{
+        text-decoration:none ;
+        margin: 20px;
+        font-size: 20px;    
+    }
+    .h-first a:hover{
+        font-size: 1.5rem;
+        color: yellow;
+    }
+    .container{
+    box-shadow: 0 9px 15px rgba(0,0,0,0.5);
+    height: 200%;
+    border-radius: 10px;
+    color: darkred;
+    font-size: 30px;
+    font-family: Arial,sans-serif;
+    transition: transform 0.3s ,box-shadow 0.3s;
+}
+.container:hover{
+    transform: translateY(-14px);
+}
+.h-first{
+    height: 70px;
+    width: 50%;
+    margin: -30px 610px;
+    background:red;
+    shape-rendering: 200px;
+    border-radius: 30px;
+}
+
+    /* Typing text */
+    #typing {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 30px 0;
+      color: #0077cc;
+    }
+
+    /* Cards section */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      color: #0077cc;
+    }
+
+    .card p {
+      padding: 0 10px 20px;
+      font-size: 14px;
+    }
+      /* Typing text */
+    #typing {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 30px 0;
+      color: #0077cc;
+    }
+
+    /* Cards section */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      color: #0077cc;
+    }
+
+    .card p {
+      padding: 0 10px 20px;
+      font-size: 14px;
+    }
+
+    /* Documentation Section */
+    .documentation {
+      margin: 50px auto;
+      padding: 20px;
+      max-width: 1000px;
+      text-align: left;
+    }
+
+    .doc-title {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #0077cc;
+      margin-bottom: 20px;
+    }
+
+    .doc-item {
+      background: #fff;
+      margin: 15px 0;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .doc-item h4 {
+      margin: 0 0 10px;
+      color: #444;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      background: #0077cc;
+      color: white;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+    .b-first a{
+    margin: -0px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    height: 20px;
+}
+.a-first a{
+   text-decoration: none; 
+   color: black; 
+    font-size: 20px;
+     height: 20px;
+     margin: 5px;
+}
+.b-first{
+    margin: 10px 1070px;
+    width: 20%;
+    font-size: 30px;
+    color: whitesmoke;
+    background: blue;
+    border-radius: 10px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+.b-first:hover{
+transform: translateX(-15px);
+}
+.a-first:hover{
+    transform: translateX(-15px);
+}
+.a-first{
+    margin: 10px 1070px;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    background: skyblue;
+    transition: transform 0.3s;
+}
+html, body {
+  overflow-x: hidden;   /* side scroll hatao */
+  margin: 0;
+  padding: 0;
+  height: 100%;         /* poora screen ke barabar */
+}
+
+/* Desktop */
+body {
+  transform-origin: top left;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    transform: scale(0.60);
+    width: 166%;
+    height: auto;       /* sirf content ke barabar height */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    transform: scale(0.40);
+    width: 250%;
+    height: auto;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  body {
+    transform: scale(0.30);
+    width: 333%;
+    height: auto;
+  }
+}
+
+</style>
+    <body>
+    
+<header>
+    <img src="download (11).jpeg" alt="mono"></img>
+    <logo>Allied Science Schools</logo>
+</header>
+<header class="h-first">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Activities.html">Activities</a>
+    <a href="Acadmies.html">Acadmies</a>
+    <a href="New.html">New</a>
+    <a href="Contact.html">Contact </a>
+</header>
+<body>
+
+  <!-- Typing Text -->
+  <div id="typing"></div>
+<header class="b-first"><a href="Experinces.html">Experience<a>
+</header>
+<header class="a-first"><a href="Testing.html">Testing Progress</a></header>
+  <!-- Cards -->
+  <div class="cards">
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=1" alt="Experience 1">
+      <h3>Web Development</h3>
+      <p>Created and managed school website with responsive design.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=2" alt="Experience 2">
+      <h3>Design</h3>
+      <p>Worked on UI/UX for better user experience and clean layout.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=3" alt="Experience 3">
+      <h3>Projects</h3>
+      <p>Handled multiple projects with HTML, CSS, and JavaScript.</p>
+    </div>
+  </div>
+
+  <script>
+    // Typing effect
+    const text = "Welcome to Experience";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+    typeWriter();
+  </script>
+
+  <!-- Typing Text -->
+  <div id="typing"></div>
+
+  <!-- Cards -->
+  <div class="cards">
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=1" alt="Experience 1">
+      <h3>Web Development</h3>
+      <p>Created and managed school website with responsive design.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=2" alt="Experience 2">
+      <h3>Design</h3>
+      <p>Worked on UI/UX for better user experience and clean layout.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=3" alt="Experience 3">
+      <h3>Projects</h3>
+      <p>Handled multiple projects with HTML, CSS, and JavaScript.</p>
+    </div>
+  </div>
+
+  <!-- Documentation Section -->
+  <div class="documentation">
+    <h2 class="doc-title">Documentation & References</h2>
+
+    <div class="doc-item" id="school">   <p><strong>School’s Reference:</strong> This project has been developed to represent our school’s achievements and efforts in digital learning.</p></div>
+    <div class="doc-item" id="irfan"><p><strong>Sir Irfan Adv:</strong> As a teacher, I feel proud to see my students learning and building creative projects like this website. Their hard work reflects true dedication.</p></div>
+    <div class="doc-item" id="staff">    <p><strong>School Staff:</strong> We appreciate the effort and creativity shown by the students in designing this website for our school.</p></div>
+    <div class="doc-item" id="me">  <p><strong>Student (Developer):</strong> I am grateful to my teachers and school for guiding me and giving me the opportunity to create this project.</p>    <p><strong>Sir Shezad:</strong> Encouraging students to work on projects like this helps them grow in both knowledge and confidence.</p></div>
+    <div class="doc-item" id="saimfarooq"><img src="IMG_4296.HEIC" alt="saim developer"><p>I proud of my school and I am a good ,great successful developer of all websites.</p></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 School Website Project</p>
+    <p>Developed with ❤️ by Student Team</p>
+  </footer>
+
+  <script>
+    // Typing effect for title
+    const text = "Welcome to Experience";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+    typeWriter();
+
+    // Documentation typing one by one
+    const docs = [
+      {id: "school", text: "📘 School: This website is proudly developed for our school to enhance digital presence."},
+      {id: "irfan", text: "👨‍🏫 Sir Irfan Adv: Special thanks for continuous guidance and motivation."},
+      {id: "staff", text: "👥 School Staff: Their support and cooperation made this project possible."},
+      {id: "me", text: "💻 Developer (Me): Designed and developed this complete website project."},
+      {id: "shehzad", text: "👨‍🏫 Sir Shehzad: Inspired and encouraged us to improve our technical skills."}
+    ];
+
+    let docIndex = 0;
+    function showDocs() {
+      if (docIndex < docs.length) {
+        let el = document.getElementById(docs[docIndex].id);
+        let text = docs[docIndex].text;
+        let j = 0;
+        function writeDoc() {
+          if (j < text.length) {
+            el.innerHTML += text.charAt(j);
+            j++;
+            setTimeout(writeDoc, 40);
+          } else {
+            docIndex++;
+            setTimeout(showDocs, 500);
+          }
+        }
+        writeDoc();
+      }
+    }
+    setTimeout(showDocs, 1500);
+  </script>
+
+
